@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* Primary */
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* Neutral */
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 51%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    background: var(--main-BG);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* card styles for heading a paragraphs inside */
+.card {
+    background: var(--card-BG);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center 145px;
+    padding: 17px 12px;
+    width: 348px;
+    height: 594px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: -1px 3px 18px 7px rgba(20,37,62,0.74);
+    -webkit-box-shadow: -1px 3px 18px 7px rgba(20,37,62,0.74);
+    -moz-box-shadow: -1px 3px 18px 7px rgba(20,37,62,0.74);
+}
+
+.card h4 {
+    color: var(--White);
+    font-weight: 600;
+    margin: 1rem 0 0 0.5rem;
+}
+
+.card h4:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.card p {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    margin: 1rem 0 0 0.5rem;
+}
+
+.card .eth {
+    color: var(--Cyan);
+    font-weight: 300;
+}
+
+.equilibrium-img {
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    width: 303px;
+    height: 305px;
+    background-repeat: repeat-y;
+}
+
+.bg-hover-effect:hover {
+    background-color: hsl(178, 100%, 50%);
+     opacity: 0.7;
+     width: 98%;
+}
+
+.equilibrium-img:hover {
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.7;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid var(--line);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.bottom p {
+    margin-left: -3rem;
+    margin-top: 3rem;
+}
+
+.bottom span {
+    color: var(--White);
+}
+
+.bottom span:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.avatar {
+    border: 2px solid var(--White);
+    border-radius: 50px;
+    width: 36px;
+    height: 38px;
+    margin-top: 3rem;
+    margin-left: -3rem;
+}
+
+@media (max-width: 768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
